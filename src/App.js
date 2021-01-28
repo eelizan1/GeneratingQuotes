@@ -26,7 +26,7 @@ const App = () => {
     <div className="App">
       <div className="quote">
         <p><i>"{quote.text}"</i></p>
-        <p> - {quote.author}</p>
+        <p> - {!quote.author ? 'Unknown' : quote.author}</p>
         <br/>
         <div className="btnContainer">
           <button onClick={fetchQuotes} className="btn">Get quote</button>

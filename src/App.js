@@ -16,8 +16,7 @@ const App = () => {
     });
   };
 
-  // load qoutes on page load 
-  // load once 
+  // load qoutes once on page load 
   useEffect(() => {
     fetchQuotes(); 
   }, [])
